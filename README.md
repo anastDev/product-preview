@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site UR]()
+- [Solution URL](https://github.com/anastDev/product-preview)
+- [Live Site UR](https://anastdev.github.io/product-preview/)
 
 ## My process
 
@@ -46,16 +46,16 @@ Users should be able to:
 
 I have learned how to effectively use Bootstrap classes to quickly style my components within the HTML code. Some of the key elements I styled include:
 
-	•	Card layout: Used Bootstrap’s row and col classes to structure the layout, making the image and content align properly.
-	•	Button styling: Applied Bootstrap’s btn class and customized it with additional properties for hover and active states.
-	•	Responsiveness: Implemented Bootstrap’s grid system and media queries to ensure the layout adapts for smaller screen sizes (375px and below).
+    •	Card layout: Used Bootstrap’s row and col classes to structure the layout, making the image and content align properly.
+    •	Button styling: Applied Bootstrap’s btn class and customized it with additional properties for hover and active states.
+    •	Responsiveness: Implemented Bootstrap’s grid system and media queries to ensure the layout adapts for smaller screen sizes (375px and below).
 
 ### Continued development
 
 I did face some challenges during development, particularly in:
 
-	•	Deciding where to focus more on Bootstrap’s predefined classes versus custom styling.
-	•	Handling the media queries and ensuring the layout adjusts well for smaller screens. This required fine-tuning and close attention to detail.
+    •	Deciding where to focus more on Bootstrap’s predefined classes versus custom styling.
+    •	Handling the media queries and ensuring the layout adjusts well for smaller screens. This required fine-tuning and close attention to detail.
 
 In future projects, I’d like to improve my understanding of Bootstrap’s more advanced components and make my development process more efficient.
 
@@ -63,7 +63,6 @@ In future projects, I’d like to improve my understanding of Bootstrap’s more
 
 - [Bootstrap Website](https://getbootstrap.com/) - This helped me quickly understand how to use Bootstrap classes and customize components.
 
-
 ## Author
 
-- Frontend Mentor - [@anastDev]()
+- Frontend Mentor - [@anastDev](https://www.frontendmentor.io/profile/anastDev)
