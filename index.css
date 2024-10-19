@@ -1,0 +1,220 @@
+/* Start of CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 150%;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3 {
+  line-height: 100%;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* End of CSS Reset */
+
+:root {
+  /* primary colors */
+  --deep-aquamarine: rgba(61, 129, 104, 1);
+  --deep-aquamarine-hover: rgba(26, 64, 50, 1);
+  --cream: hsl(30, 38%, 92%);
+  --attribution-color: hsl(228, 45%, 44%);
+  /* neutral colors */
+  --gun-metal: hsl(212, 21%, 14%);
+  --aurometal-blue: hsl(228, 12%, 48%);
+  --purewhite: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: "Montserrat", "Fraunces", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+main {
+  background-color: var(--cream);
+}
+
+
+/* main CSS styling */
+.custom-card {
+  max-width: 600px;
+  max-height: 450px;
+  background-color: var(--purewhite);
+  border: none;
+  border-radius: 0.7rem !important;
+}
+
+.card-img {
+  object-fit: cover;
+  border-top-left-radius: 0.7rem !important;
+  border-bottom-left-radius: 0.7rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+
+.card-title,
+.discounted-price {
+  font-family: "Fraunces";
+}
+
+.card-title {
+  color: var(--gun-metal);
+  font-size: 2.28rem;
+}
+
+.card-subtitle {
+  color: var(--aurometal-blue);
+  font-size: 0.85rem;
+  letter-spacing: 5px;
+}
+
+.card-text {
+  font-family: "Montserrat";
+  color: var(--aurometal-blue);
+  line-height: 1.64rem;
+}
+
+.product-price {
+  margin-bottom: 2.14rem;
+}
+
+span.discounted-price {
+  line-height: 2.28rem;
+  font-size: 2.28rem;
+}
+
+span.original-price {
+  line-height: 1.64rem;
+  color: var(--aurometal-blue);
+}
+
+a.btn.btn-primary {
+  border: none;
+  font-weight: 700;
+  max-height: 48px;
+  max-width: 295px;
+  border-radius: 8px;
+  background-color: var(--deep-aquamarine);
+  color: var(--purewhite);
+}
+
+.btn-primary:hover {
+  background-color: var(--deep-aquamarine-hover);
+}
+
+.btn-primary img {
+  background-color: transparent;
+}
+
+.attribution,
+.attribution a {
+  font-size: 0.8rem;
+}
+
+.attribution a {
+  color: var(--attribution-color);
+}
+
+/* Media query for mobile screens */
+@media (max-width: 375px) {
+
+  .custom-card .row{
+    flex-direction: column;
+  }
+
+  .custom-card {
+    max-width: 343px;
+    max-height: 611px;
+    border-radius: 0.7rem !important;
+  }
+
+  /* Adjusting the img styling */
+  .custom-card .card-img {
+    max-height: 240px;
+    max-width:100%;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0.7rem !important;
+  }
+
+  /* Title styling */
+  .custom-card .card-title {
+    margin-bottom: 1.14rem;
+  }
+
+  /* Subtitle styling */
+  .custom-card .card-subtitle {
+    margin-bottom: 0.85rem ;
+  }
+
+  /* Product price styling */
+  .custom-card .product-price {
+    margin-bottom: 1.14rem ;
+  }
+
+  /* Button styling */
+  .custom-card .btn-primary {
+    margin-bottom: 1.14rem;
+  }
+}
